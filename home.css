@@ -1,0 +1,483 @@
+/* Start Global Rulse*/
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Alegreya";
+	font-weight: bold;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+/* Medium */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* Large */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+/*End Global Rulse*/
+
+/* STart Header */
+
+header {
+	position: fixed;
+	background-color: #fff;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.427);
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	flex-wrap: wrap;
+	min-height: 65px;
+}
+header .container img {
+	width: 160px;
+}
+header nav {
+	display: flex;
+	align-items: center;
+}
+
+header .container nav ul {
+	display: flex;
+	margin-left: 160px;
+}
+
+header .container nav ul li a {
+	display: flex;
+	text-decoration: none;
+	position: relative;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	padding: 0px 20px;
+	color: #1111113e;
+	overflow: hidden;
+	height: 65px;
+}
+
+header .container nav ul li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: #8e7754;
+	top: 0;
+	left: -100%;
+}
+header .container nav ul li a:hover {
+	color: #8e7754;
+}
+header .container nav ul li a:hover::before {
+	left: 0;
+}
+/* End Header */
+
+/* Start Landing */
+.landing img {
+	max-width: 100%;
+	position: relative;
+}
+.landing .heading {
+	position: absolute;
+	top: 42%;
+	left: 25%;
+	color: #fff;
+}
+
+.landing .heading h4 {
+	margin-top: 70px;
+	text-align: center;
+	font-size: 34px;
+}
+.landing .heading h3 {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 70px;
+}
+.landing .heading p {
+	text-align: center;
+	font-family: "Alegreya";
+	margin-top: 15px;
+	width: 770px;
+	font-size: 24px;
+	line-height: 1.8;
+}
+.landing .btn {
+	position: absolute;
+	top: 90%;
+	left: 41%;
+	text-align: center;
+	font-family: "Alegreya";
+}
+.landing .btn button {
+	padding: 20px;
+	width: 130px;
+	border-radius: 6px;
+	border: none;
+	font-weight: bold;
+}
+.landing .btn .btn1 {
+	background-color: #8e7754;
+	border: 1px solid #8e7754;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.landing .btn .btn2 {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.landing .btn .btn1:hover,
+.landing .btn .btn2:hover {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: black;
+	cursor: pointer;
+}
+/* End Landing */
+
+/* Start Services */
+.services {
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 60px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.services .images img {
+	position: relative;
+	width: 585px;
+}
+
+.services .caption {
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+	margin-top: 80px;
+}
+.services .caption .pa {
+	margin-bottom: 20px;
+}
+.services .caption .pa h4 {
+	font-family: "Alegreya";
+	margin-bottom: 25px;
+	color: #303030;
+	line-height: 1.38em;
+	font-size: 32px;
+	font-weight: 400;
+}
+.services .caption p {
+	width: 590px;
+	line-height: 1.86em;
+	font-family: "Alegreya Sans";
+	color: #888;
+}
+
+.services .caption li i {
+	margin-right: 20px;
+	border: 1px solid #8e7754;
+	border-radius: 50%;
+	padding: 10px;
+	color: #8e7754;
+	font-weight: bold;
+}
+.services .caption ul li {
+	display: flex;
+	margin-bottom: 20px;
+}
+.services .caption ul {
+	margin-top: 20px;
+}
+
+/* End Services */
+
+/* Start Our location */
+.loc {
+	background-color: #f8f8f8;
+	height: 620px;
+}
+.loc .container .ab {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.loc .container .ab .im img {
+	width: 550px;
+	margin-top: 75px;
+	margin-left: 60px;
+}
+.loc .container .ab .pa2 {
+	margin-top: 170px;
+}
+.loc .container .ab .pa2 h4 {
+	margin-bottom: 25px;
+	color: #303030;
+	line-height: 1.38em;
+	font-size: 32px;
+	font-weight: 400;
+}
+.loc .container .ab .pa2 p {
+	width: 590px;
+	line-height: 1.86em;
+	font-family: "Alegreya Sans";
+	color: #888;
+}
+.loc .container .ab .pa2 > p {
+	margin-bottom: 20px;
+}
+/* End Our location */
+
+/* Start Our Baking */
+.container .men {
+	margin-bottom: 80px;
+}
+.container .main-head {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.container .main-head h3 {
+	margin-bottom: 25px;
+	color: #303030;
+	line-height: 1.38em;
+	font-size: 32px;
+	font-weight: 400;
+}
+.container .main-head p {
+	font-family: "Alegreya Sans";
+	color: #888;
+}
+.container .collection {
+	display: flex;
+	justify-content: space-between;
+}
+.container .collection .menu {
+	max-width: 450px;
+	margin-right: 40px;
+}
+.container .collection .menu img {
+	max-width: 100%;
+}
+.container .collection .menu h5,
+.container .collection .menu p {
+	text-align: center;
+}
+.container .collection .menu h5 {
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	color: #303030;
+	line-height: 1.38em;
+	font-weight: 400;
+}
+.container .collection .menu p {
+	font-family: "Alegreya Sans";
+	color: #888;
+	line-height: 1.8;
+	font-size: 15px;
+}
+/* End Our Baking */
+
+/* Start Contact info  */
+
+.contact {
+	background-color: #f8f8f8;
+	height: 680px;
+}
+
+.contact .container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.contact .container .caption1 {
+	margin-right: 80px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.contact .caption1 .pa3 {
+	margin-bottom: 40px;
+}
+.contact .caption1 .pa3 h4 {
+	font-family: "Alegreya";
+	margin-bottom: 25px;
+	color: #303030;
+	line-height: 1.38em;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.contact .caption1 p {
+	width: 590px;
+	line-height: 1.86em;
+	font-family: "Alegreya Sans";
+	color: #888;
+}
+.contact .caption1 span {
+	font-family: "Alegreya Sans";
+	color: #888;
+	margin-bottom: 40px;
+}
+
+.contact .caption1 ul li i {
+	margin-right: 20px;
+	border: 1px solid #8e7754;
+	border-radius: 50%;
+	background-color: #8e7754;
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.contact .caption1 ul li {
+	display: flex;
+}
+
+.contact .caption ul {
+	margin-top: 20px;
+}
+
+.contact .images1 iframe {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.contact .images1 img {
+	position: relative;
+	top: -204px;
+	left: 146px;
+}
+/* End Contact info  */
+/* Start footer */
+.footer {
+	background-color: #403d38;
+}
+
+.footer .container .foot {
+	display: flex;
+	justify-content: space-between;
+}
+
+.foot .abous,
+.why,
+.open,
+.details {
+	margin-top: 60px;
+	width: 500px;
+	margin-right: 11px;
+	margin-bottom: 40px;
+}
+.foot .abous h4,
+.why h4,
+.open h4,
+.details h4 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+.foot p,
+.foot span,
+.foot i {
+	color: #969696;
+	font-size: 14px;
+}
+.foot .abous p {
+	line-height: 1.8;
+}
+.foot .abous > p {
+	margin-bottom: 20px;
+}
+.foot span,
+.foot li {
+	display: flex;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #96969645;
+	padding-bottom: 5px;
+	line-height: 1.8;
+}
+.foot li i {
+	margin-right: 11px;
+}
+.foot .details {
+	background-image: url("images/contact-details-map.png");
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position: 0px 68px;
+}
+/* End footer */
+
+/* Start footer2  */
+.footer2 {
+	background-color: #353330;
+}
+.footer2 .ima img {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	position: relative;
+	left: 33%;
+}
+.footer2 .ima span {
+	position: relative;
+	left: 7%;
+	margin-bottom: 60px;
+	color: #969696;
+	font-size: 14px;
+}
+.footer2 .icons i {
+	background-color: #403d38;
+	border: 1px solid #403d38;
+	color: #969696;
+	padding: 15px;
+	border-radius: 50%;
+	margin-right: 5px;
+	margin-top: 30px;
+	position: relative;
+	left: 434px;
+	margin-bottom: 80px;
+}
+/* End footer2  */
